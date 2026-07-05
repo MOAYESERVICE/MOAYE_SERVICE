@@ -40,17 +40,19 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 8%; /* Augmentation de l'espace interne pour laisser respirer le menu */
+    padding: 20px 8%; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(17, 24, 39, 0.4); /* Léger fond sombre au démarrage pour protéger le menu */
+    /* MODIFICATION ICI : On utilise un fond transparent ou crème ultra-léger */
+    background-color: rgba(251, 249, 244, 0.2); 
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 /* ==========================================================================
    CORRECTEUR ALIGNEMENT MENU MOBILE (LOGO À GAUCHE, TROIS TRAITS À DROITE)
    ========================================================================== */
