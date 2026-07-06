@@ -10,7 +10,7 @@ if (mainHeader && heroSection) {
         const heroHeight = heroSection.offsetHeight;
         
         // Si le défilement dépasse la hauteur de l'image (moins la taille du menu)
-        if (window.scrollY >= (heroHeight - 500)) {
+        if (window.scrollY >= (heroHeight - 600)) {
             mainHeader.classList.add('scrolled'); // Le fond sombre apparaît
         } else {
             mainHeader.classList.remove('scrolled'); // Devient 100% transparent
