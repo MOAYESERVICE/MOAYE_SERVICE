@@ -19,9 +19,7 @@
     font-family: 'Montserrat', sans-serif; /* Application de la nouvelle police */
     scroll-behavior: smooth;
 }
-html, body {
-    background-color: var(--bg-creme) !important;
-}
+
 
 
 
@@ -50,13 +48,11 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* Remplacer l'ancien background-color par celui-ci (totalement transparent au départ) */
-    background-color: transparent; 
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
-    border-bottom: 1px solid transparent;
-    /* Ajout d'une transition pour que le fond s'affiche en douceur */
-    transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+    /* MODIFICATION ICI : On utilise un fond transparent ou crème ultra-léger */
+    background-color: rgba(251, 249, 244, 0.2); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 
